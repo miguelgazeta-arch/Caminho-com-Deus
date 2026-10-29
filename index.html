@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Caminho com Deus — Sua rotina espiritual diária: orações, versículos, evangelho e muito mais." />
+  <meta name="theme-color" content="#4a2c6e" />
+  <title>Caminho com Deus</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVBAR
+  ======================================================== -->
+  <header class="navbar nav" role="banner">
+    <div class="navbar-inner nav-inner">
+      <a href="#" class="navbar-logo nav-logo" data-section="home" aria-label="Ir para a página inicial">
+        <span class="cruz">✝</span> <span>Caminho com Deus</span>
+      </a>
+
+      <!-- Hamburger Button (mobile) -->
+      <button
+        id="menu-hamburger"
+        class="hamburger btn-hamburger"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span class="hamburger-bar barra"></span>
+        <span class="hamburger-bar barra"></span>
+        <span class="hamburger-bar barra"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav id="nav-menu" class="nav-menu" role="navigation" aria-label="Navegação principal">
+        <ul class="nav-list nav-links">
+          <li><a href="#" class="nav-link" data-section="home">🏠 Início</a></li>
+          <li><a href="#" class="nav-link" data-section="oracao">🙏 Oração</a></li>
+          <li><a href="#" class="nav-link" data-section="versiculos">✨ Versículos</a></li>
+          <li><a href="#" class="nav-link" data-section="evangelho">⛪ Evangelho</a></li>
+          <li><a href="#" class="nav-link" data-section="musicas">🎵 Músicas</a></li>
+          <li><a href="#" class="nav-link" data-section="oracoes">🤲 Orações</a></li>
+          <li><a href="#" class="nav-link" data-section="mandamentos">📜 Mandamentos</a></li>
+          <li><a href="#" class="nav-link" data-section="biblia">📖 Bíblia</a></li>
+          <li><a href="#" class="nav-link" data-section="habitos">🌱 Hábitos</a></li>
+          <li><a href="#" class="nav-link" data-section="progresso">📊 Progresso</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       MAIN CONTENT
+  ======================================================== -->
+  <main id="main-content" role="main">
+
+    <!-- ====================================================
+         SECTION: HOME
+    ==================================================== -->
+    <section id="home" class="section section-active" aria-labelledby="home-title">
+      <div class="container">
+
+        <!-- Welcome Banner -->
+        <div class="home-hero">
+          <h1 id="home-title" class="hero-title">Bem-vindo ao Caminho com Deus</h1>
+          <p id="home-date" class="hero-date" aria-live="polite"></p>
+          <p class="hero-subtitle">
+            Que este momento seja de encontro com o amor de Deus. Comece sua jornada espiritual hoje.
+          </p>
+        </div>
+
+        <!-- Daily Encouragement Card -->
+        <div id="mensagem-diaria" class="daily-encouragement" role="complementary" aria-label="Mensagem do dia">
+          <span class="daily-encouragement-icon" aria-hidden="true">💫</span>
+          <p class="daily-encouragement-text">Carregando mensagem do dia…</p>
+        </div>
+
+        <!-- Quick-Access Grid -->
+        <h2 class="section-subtitle">O que você quer fazer hoje?</h2>
+        <div class="cards-grid" role="list">
+
+          <!-- Card 1: Vamos Orar -->
+          <article class="quick-card" role="listitem">
+            <div class="quick-card-icon" aria-hidden="true">🙏</div>
+            <h3 class="quick-card-title">Vamos Orar</h3>
+            <p class="quick-card-desc">Inicie um momento de oração guiada com timer.</p>
+            <button class="btn btn-primary" data-section="oracao" aria-label="Ir para seção de oração">
+              Começar
+            </button>
+          </article>
+
+          <!-- Card 2: Leitura Bíblica -->
+          <article class="quick-card" role="listitem">
+            <div class="quick-card-icon" aria-hidden="true">📖</div>
+            <h3 class="quick-card-title">Leitura Bíblica</h3>
+            <p class="quick-card-desc">Descubra como iniciar sua leitura bíblica.</p>
+            <button class="btn btn-primary" data-section="biblia" aria-label="Ir para seção como ler a Bíblia">
+              Explorar
+            </button>
+          </article>
+
+          <!-- Card 3: Versículos do Dia -->
+          <article class="quick-card" role="listitem">
+            <div class="quick-card-icon" aria-hidden="true">✨</div>
+            <h3 class="quick-card-title">Versículos do Dia</h3>
+            <p class="quick-card-desc">5 versículos selecionados para inspirar seu dia.</p>
+            <button class="btn btn-primary" data-section="versiculos" aria-label="Ir para versículos do dia">
+              Ver Versículos
+            </button>
+          </article>
+
+          <!-- Card 4: Evangelho do Dia -->
+          <article class="quick-card" role="listitem">
+            <div class="quick-card-icon" aria-hidden="true">⛪</div>
+            <h3 class="quick-card-title">Evangelho do Dia</h3>
+            <p class="quick-card-desc">Leia e reflita sobre o evangelho de hoje.</p>
+            <button class="btn btn-primary" data-section="evangelho" aria-label="Ir para evangelho do dia">
+              Ler Evangelho
+            </button>
+          </article>
+
+          <!-- Card 5: Músicas Cristãs -->
+          <article class="quick-card" role="listitem">
+            <div class="quick-card-icon" aria-hidden="true">🎵</div>
+            <h3 class="quick-card-title">Músicas Cristãs</h3>
+            <p class="quick-card-desc">Louvor e adoração para elevar seu espírito.</p>
+            <button class="btn btn-primary" data-section="musicas" aria-label="Ir para músicas cristãs">
+              Ouvir Músicas
+            </button>
+          </article>
+
+          <!-- Card 6: Orações -->
+          <article class="quick-card" role="listitem">
+            <div class="quick-card-icon" aria-hidden="true">🤲</div>
+            <h3 class="quick-card-title">Orações</h3>
+            <p class="quick-card-desc">Católicas tradicionais e orações para o dia a dia.</p>
+            <button class="btn btn-primary" data-section="oracoes" aria-label="Ir para orações">
+              Rezar
+            </button>
+          </article>
+
+          <!-- Card 7: Dez Mandamentos -->
+          <article class="quick-card" role="listitem">
+            <div class="quick-card-icon" aria-hidden="true">📜</div>
+            <h3 class="quick-card-title">Dez Mandamentos</h3>
+            <p class="quick-card-desc">Conheça e reflita sobre os mandamentos de Deus.</p>
+            <button class="btn btn-primary" data-section="mandamentos" aria-label="Ir para os dez mandamentos">
+              Conhecer
+            </button>
+          </article>
+
+          <!-- Card 8: Como Ler a Bíblia -->
+          <article class="quick-card" role="listitem">
+            <div class="quick-card-icon" aria-hidden="true">📚</div>
+            <h3 class="quick-card-title">Como Ler a Bíblia</h3>
+            <p class="quick-card-desc">Guia prático para iniciantes na leitura bíblica.</p>
+            <button class="btn btn-primary" data-section="biblia" aria-label="Ir para como ler a Bíblia">
+              Ver Guia
+            </button>
+          </article>
+
+          <!-- Card 9: Superar Hábitos -->
+          <article class="quick-card" role="listitem">
+            <div class="quick-card-icon" aria-hidden="true">🌱</div>
+            <h3 class="quick-card-title">Superar Hábitos</h3>
+            <p class="quick-card-desc">Plano de 7 dias para superar hábitos com fé.</p>
+            <button class="btn btn-primary" data-section="habitos" aria-label="Ir para superar hábitos">
+              Iniciar Plano
+            </button>
+          </article>
+
+          <!-- Card 10: Meu Progresso -->
+          <article class="quick-card" role="listitem">
+            <div class="quick-card-icon" aria-hidden="true">📊</div>
+            <h3 class="quick-card-title">Meu Progresso</h3>
+            <p class="quick-card-desc">Acompanhe sua jornada espiritual e evolução.</p>
+            <button class="btn btn-primary" data-section="progresso" aria-label="Ir para meu progresso">
+              Ver Progresso
+            </button>
+          </article>
+
+        </div><!-- /.cards-grid -->
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ====================================================
+         SECTION: ORAÇÃO (Prayer Timer)
+    ==================================================== -->
+    <section id="oracao" class="section" aria-labelledby="oracao-title">
+      <div class="container">
+        <button class="btn-voltar" data-section="home" aria-label="Voltar para a página inicial">
+          ← Voltar
+        </button>
+
+        <header class="section-header">
+          <h2 id="oracao-title" class="section-title">🙏 Momento de Oração</h2>
+          <p class="section-desc">
+            Reserve este tempo para se conectar com Deus. Siga os passos guiados e deixe o coração falar.
+          </p>
+        </header>
+
+        <!-- Duration Selector -->
+        <div class="duration-selector" role="group" aria-label="Selecionar duração da oração">
+          <span class="duration-label">Duração:</span>
+          <button class="btn btn-duration" data-minutos="1" aria-pressed="false">1 min</button>
+          <button class="btn btn-duration" data-minutos="3" aria-pressed="false">3 min</button>
+          <button class="btn btn-duration btn-duration-active" data-minutos="5" aria-pressed="true">5 min</button>
+          <button class="btn btn-duration" data-minutos="10" aria-pressed="false">10 min</button>
+        </div>
+
+        <!-- Timer Display -->
+        <div class="timer-wrapper" role="timer" aria-live="polite" aria-atomic="true">
+          <div id="timer-display" class="timer-display" aria-label="Tempo restante">05:00</div>
+          <div class="timer-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+            <div id="timer-progress" class="timer-progress-bar"></div>
+          </div>
+        </div>
+
+        <!-- Current Step Indicator -->
+        <div class="step-indicator">
+          <p id="passo-atual" class="step-current" aria-live="polite">Passo 1 de 5</p>
+          <p id="descricao-passo" class="step-description" aria-live="polite">Prepare-se para entrar na presença de Deus.</p>
+        </div>
+
+        <!-- Prayer Steps List -->
+        <ol class="prayer-steps" aria-label="Passos da oração">
+          <li id="passo-1" class="prayer-step prayer-step-active">
+            <span class="step-icon" aria-hidden="true">🤫</span>
+            <div class="step-content">
+              <strong>Silêncio e Presença</strong>
+              <p>Respire fundo, aquiete o coração e tome consciência da presença de Deus.</p>
+            </div>
+          </li>
+          <li id="passo-2" class="prayer-step">
+            <span class="step-icon" aria-hidden="true">🙌</span>
+            <div class="step-content">
+              <strong>Adoração e Louvor</strong>
+              <p>Agradeça a Deus por quem Ele é — sua bondade, amor e misericórdia.</p>
+            </div>
+          </li>
+          <li id="passo-3" class="prayer-step">
+            <span class="step-icon" aria-hidden="true">💔</span>
+            <div class="step-content">
+              <strong>Arrependimento</strong>
+              <p>Com humildade, apresente suas falhas e peça perdão sincero a Deus.</p>
+            </div>
+          </li>
+          <li id="passo-4" class="prayer-step">
+            <span class="step-icon" aria-hidden="true">🙏</span>
+            <div class="step-content">
+              <strong>Intercessão e Pedidos</strong>
+              <p>Ore pelos outros e apresente suas necessidades e as das pessoas queridas.</p>
+            </div>
+          </li>
+          <li id="passo-5" class="prayer-step">
+            <span class="step-icon" aria-hidden="true">✝</span>
+            <div class="step-content">
+              <strong>Entrega e Gratidão</strong>
+              <p>Entregue tudo nas mãos de Deus e agradeça por este momento de oração.</p>
+            </div>
+          </li>
+        </ol>
+
+        <!-- Timer Controls -->
+        <div class="timer-controls" role="group" aria-label="Controles do timer">
+          <button id="btn-iniciar" class="btn btn-success">▶ Iniciar Oração</button>
+          <button id="btn-pausar" class="btn btn-warning" hidden>⏸ Pausar</button>
+          <button id="btn-continuar" class="btn btn-info" hidden>▶ Continuar</button>
+          <button id="btn-reiniciar" class="btn btn-secondary" hidden>↺ Reiniciar</button>
+        </div>
+
+        <!-- Completion Message -->
+        <div id="mensagem-conclusao" class="completion-message" hidden role="status" aria-live="polite">
+          <span class="completion-icon" aria-hidden="true">🕊️</span>
+          <h3>Oração concluída!</h3>
+          <p>
+            "Perseverai na oração, velando nela com ação de graças." — Colossenses 4,2
+          </p>
+          <button id="btn-registrar-oracao" class="btn btn-primary">
+            ✅ Registrar esta Oração
+          </button>
+        </div>
+
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ====================================================
+         SECTION: VERSÍCULOS DO DIA
+    ==================================================== -->
+    <section id="versiculos" class="section" aria-labelledby="versiculos-title">
+      <div class="container">
+        <button class="btn-voltar" data-section="home" aria-label="Voltar para a página inicial">
+          ← Voltar
+        </button>
+
+        <header class="section-header">
+          <h2 id="versiculos-title" class="section-title">✨ Versículos do Dia</h2>
+          <p class="section-desc versiculos-date" aria-live="polite"></p>
+          <p class="section-desc">
+            Cinco versículos selecionados especialmente para iluminar seu caminho hoje.
+          </p>
+        </header>
+
+        <!-- Theme Filters -->
+        <div class="filtros-categoria filtros-versiculos" role="group" aria-label="Filtrar versículos por tema">
+          <button class="btn btn-filter btn-filter-active" data-tema-filtro="todos" aria-pressed="true">✨ Todos de Hoje</button>
+          <button class="btn btn-filter" data-tema-filtro="Fé" aria-pressed="false">Fé</button>
+          <button class="btn btn-filter" data-tema-filtro="Amor" aria-pressed="false">Amor</button>
+          <button class="btn btn-filter" data-tema-filtro="Esperança" aria-pressed="false">Esperança</button>
+          <button class="btn btn-filter" data-tema-filtro="Sabedoria" aria-pressed="false">Sabedoria</button>
+          <button class="btn btn-filter" data-tema-filtro="Perdão" aria-pressed="false">Perdão</button>
+          <button class="btn btn-filter" data-tema-filtro="Coragem" aria-pressed="false">Coragem</button>
+          <button class="btn btn-filter" data-tema-filtro="Gratidão" aria-pressed="false">Gratidão</button>
+          <button class="btn btn-filter" data-tema-filtro="Perseverança" aria-pressed="false">Perseverança</button>
+        </div>
+
+        <!-- Verses Container (populated by JS) -->
+        <div id="versiculos-container" class="versiculos-container" role="list" aria-label="Versículos do dia">
+          <!-- Verse cards rendered by script.js -->
+          <p class="loading-text">Carregando versículos…</p>
+        </div>
+
+        <!-- Favorites Section -->
+        <section id="favoritos-versiculos" class="favoritos-section" aria-labelledby="fav-versiculos-title">
+          <h3 id="fav-versiculos-title">⭐ Meus Versículos Favoritos</h3>
+          <div id="lista-favoritos-versiculos-local" class="favoritos-lista">
+            <!-- Populated by JS -->
+          </div>
+        </section>
+
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ====================================================
+         SECTION: EVANGELHO DO DIA
+    ==================================================== -->
+    <section id="evangelho" class="section" aria-labelledby="evangelho-title">
+      <div class="container">
+        <button class="btn-voltar" data-section="home" aria-label="Voltar para a página inicial">
+          ← Voltar
+        </button>
+
+        <header class="section-header">
+          <h2 id="evangelho-title" class="section-title">⛪ Evangelho do Dia</h2>
+          <p id="evangelho-data" class="section-desc" aria-live="polite"></p>
+          <p id="evangelho-fonte" class="evangelho-fonte"></p>
+        </header>
+
+        <!-- Offline Notice -->
+        <div id="evangelho-offline" class="offline-notice" hidden role="alert">
+          <span aria-hidden="true">📵</span>
+          <p>
+            Não foi possível carregar o evangelho de hoje. Verifique sua conexão com a internet ou volte mais tarde.
+            Enquanto isso, abra sua Bíblia e leia Marcos capítulo 1.
+          </p>
+        </div>
+
+        <!-- Gospel Content -->
+        <article class="evangelho-content" aria-label="Leituras do dia">
+
+          <!-- First Reading -->
+          <div class="leitura-card">
+            <h3 class="leitura-titulo">📖 Primeira Leitura</h3>
+            <div id="primeira-leitura" class="leitura-texto">
+              <p class="loading-text">Carregando primeira leitura…</p>
+            </div>
+          </div>
+
+          <!-- Psalm -->
+          <div class="leitura-card">
+            <h3 class="leitura-titulo">🎼 Salmo Responsorial</h3>
+            <div id="salmo-responsorial" class="leitura-texto salmo">
+              <p class="loading-text">Carregando salmo…</p>
+            </div>
+          </div>
+
+          <!-- Gospel -->
+          <div class="leitura-card leitura-card-destaque">
+            <h3 class="leitura-titulo">✝ Evangelho</h3>
+            <p id="evangelho-referencia" class="evangelho-referencia"></p>
+            <div id="evangelho-texto" class="leitura-texto evangelho-texto">
+              <p class="loading-text">Carregando evangelho…</p>
+            </div>
+          </div>
+
+          <!-- Context -->
+          <div class="leitura-card">
+            <h3 class="leitura-titulo">📚 Contexto Histórico</h3>
+            <div id="evangelho-contexto" class="leitura-texto">
+              <p class="loading-text">Carregando contexto…</p>
+            </div>
+          </div>
+
+          <!-- Reflection -->
+          <div class="leitura-card">
+            <h3 class="leitura-titulo">💭 Reflexão</h3>
+            <div id="evangelho-reflexao" class="leitura-texto">
+              <p class="loading-text">Carregando reflexão…</p>
+            </div>
+          </div>
+
+          <!-- Daily Question -->
+          <div class="leitura-card leitura-card-question">
+            <h3 class="leitura-titulo">❓ Para Refletir Hoje</h3>
+            <p id="evangelho-pergunta" class="evangelho-pergunta" aria-live="polite"></p>
+          </div>
+
+          <!-- Suggested Prayer -->
+          <div class="leitura-card">
+            <h3 class="leitura-titulo">🙏 Oração Sugerida</h3>
+            <div id="evangelho-oracao-sugestao" class="leitura-texto oracao-sugerida">
+              <p class="loading-text">Carregando oração…</p>
+            </div>
+          </div>
+
+        </article>
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ====================================================
+         SECTION: MÚSICAS CRISTÃS
+    ==================================================== -->
+    <section id="musicas" class="section" aria-labelledby="musicas-title">
+      <div class="container">
+        <button class="btn-voltar" data-section="home" aria-label="Voltar para a página inicial">
+          ← Voltar
+        </button>
+
+        <header class="section-header">
+          <h2 id="musicas-title" class="section-title">🎵 Músicas Cristãs</h2>
+          <p class="section-desc">
+            Louvor, adoração e músicas para fortalecer sua fé. Clique no link para ouvir no YouTube.
+          </p>
+        </header>
+
+        <!-- Category Filter -->
+        <div class="musicas-filtros" role="group" aria-label="Filtrar músicas por categoria">
+          <button class="btn btn-filter btn-filter-active" data-categoria="todas" aria-pressed="true">🎵 Todas</button>
+          <button class="btn btn-filter" data-categoria="adoracao" aria-pressed="false">✝ Adoração</button>
+          <button class="btn btn-filter" data-categoria="agradecimento" aria-pressed="false">🙌 Agradecimento</button>
+          <button class="btn btn-filter" data-categoria="esperanca" aria-pressed="false">🕊️ Esperança e Fé</button>
+          <button class="btn btn-filter" data-categoria="oracao" aria-pressed="false">🙏 Oração</button>
+          <button class="btn btn-filter" data-categoria="catolica" aria-pressed="false">⛪ Católica</button>
+          <button class="btn btn-filter" data-categoria="contemporanea" aria-pressed="false">🎶 Contemporânea</button>
+          <button class="btn btn-filter" data-categoria="hinos" aria-pressed="false">📜 Hinos Tradicionais</button>
+        </div>
+
+        <!-- Music Grid (populated by JS) -->
+        <div id="musicas-grid" class="musicas-grid" role="list" aria-label="Lista de músicas">
+          <!-- Music cards rendered by script.js -->
+          <p class="loading-text">Carregando músicas…</p>
+        </div>
+
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ====================================================
+         SECTION: ORAÇÕES
+    ==================================================== -->
+    <section id="oracoes" class="section" aria-labelledby="oracoes-title">
+      <div class="container">
+        <button class="btn-voltar" data-section="home" aria-label="Voltar para a página inicial">
+          ← Voltar
+        </button>
+
+        <header class="section-header">
+          <h2 id="oracoes-title" class="section-title">🤲 Orações</h2>
+          <p class="section-desc">
+            Orações tradicionais católicas e orações para o cotidiano para nutrir sua vida espiritual.
+          </p>
+        </header>
+
+        <!-- Tab Buttons -->
+        <div class="tabs" role="tablist" aria-label="Categorias de orações">
+          <button
+            class="tab-btn tab-btn-active active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="oracoes-tradicionais"
+            data-tab="oracoes-tradicionais"
+            id="tab-tradicionais"
+          >
+            ✝ Orações Tradicionais Católicas
+          </button>
+          <button
+            class="tab-btn"
+            role="tab"
+            aria-selected="false"
+            aria-controls="oracoes-cotidianas"
+            data-tab="oracoes-cotidianas"
+            id="tab-cotidianas"
+          >
+            🌅 Orações para o Dia a Dia
+          </button>
+        </div>
+
+        <!-- ── Traditional Catholic Prayers ── -->
+        <div
+          id="oracoes-tradicionais"
+          class="tab-panel tab-panel-active tab-content active"
+          role="tabpanel"
+          aria-labelledby="tab-tradicionais"
+        >
+
+          <!-- 1. PAI-NOSSO -->
+          <article class="oracao-card" data-tipo="tradicional" aria-labelledby="titulo-pai-nosso">
+            <header class="oracao-card-header">
+              <h3 id="titulo-pai-nosso" class="oracao-titulo">✝ Pai-Nosso</h3>
+              <em class="oracao-uso">A oração que o próprio Jesus nos ensinou (Mateus 6,9-13)</em>
+            </header>
+            <p class="texto-oracao">
+              Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino;
+              seja feita a vossa vontade assim na terra como no céu. O pão nosso de cada dia nos dai hoje;
+              perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido; e não nos
+              deixeis cair em tentação, mas livrai-nos do mal. Amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar Pai-Nosso">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar Pai-Nosso" data-oracao="Pai-Nosso">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar o Pai-Nosso agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 2. AVE-MARIA -->
+          <article class="oracao-card" data-tipo="tradicional" aria-labelledby="titulo-ave-maria">
+            <header class="oracao-card-header">
+              <h3 id="titulo-ave-maria" class="oracao-titulo">🌹 Ave-Maria</h3>
+              <em class="oracao-uso">Saudação do Anjo Gabriel e invocação à Virgem Maria (Lucas 1,28.42)</em>
+            </header>
+            <p class="texto-oracao">
+              Ave Maria, cheia de graça, o Senhor é convosco; bendita sois vós entre as mulheres, e bendito
+              é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós pecadores, agora e
+              na hora da nossa morte. Amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar Ave-Maria">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar Ave-Maria" data-oracao="Ave-Maria">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar o Ave-Maria agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 3. GLÓRIA AO PAI -->
+          <article class="oracao-card" data-tipo="tradicional" aria-labelledby="titulo-gloria">
+            <header class="oracao-card-header">
+              <h3 id="titulo-gloria" class="oracao-titulo">☀️ Glória ao Pai</h3>
+              <em class="oracao-uso">Doxologia trinitária — rezada ao final de cada mistério do Rosário</em>
+            </header>
+            <p class="texto-oracao">
+              Glória ao Pai, ao Filho e ao Espírito Santo. Como era no princípio, agora e sempre. Amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar Glória ao Pai">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar Glória ao Pai" data-oracao="Glória ao Pai">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar o Glória ao Pai agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 4. SANTO ANJO -->
+          <article class="oracao-card" data-tipo="tradicional" aria-labelledby="titulo-santo-anjo">
+            <header class="oracao-card-header">
+              <h3 id="titulo-santo-anjo" class="oracao-titulo">👼 Santo Anjo</h3>
+              <em class="oracao-uso">Oração ao Anjo da Guarda — rezada pela manhã ou à noite</em>
+            </header>
+            <p class="texto-oracao">
+              Santo Anjo do Senhor, meu zeloso guardador, se a ti me confiou a piedade divina,
+              sempre me rege, guarda, governa e ilumina. Amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar Santo Anjo">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar Santo Anjo" data-oracao="Santo Anjo">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar o Santo Anjo agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 5. CREDO APOSTÓLICO -->
+          <article class="oracao-card" data-tipo="tradicional" aria-labelledby="titulo-credo">
+            <header class="oracao-card-header">
+              <h3 id="titulo-credo" class="oracao-titulo">📜 Credo Apostólico</h3>
+              <em class="oracao-uso">Profissão de fé da Igreja desde os tempos apostólicos</em>
+            </header>
+            <p class="texto-oracao">
+              Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho,
+              nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria; padeceu
+              sob Pôncio Pilatos, foi crucificado, morto e sepultado; desceu à mansão dos mortos; ressuscitou
+              ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de
+              vir a julgar os vivos e os mortos; creio no Espírito Santo, na santa Igreja Católica, na comunhão
+              dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar Credo Apostólico">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar Credo Apostólico" data-oracao="Credo Apostólico">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar o Credo agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 6. SALVE-RAINHA -->
+          <article class="oracao-card" data-tipo="tradicional" aria-labelledby="titulo-salve">
+            <header class="oracao-card-header">
+              <h3 id="titulo-salve" class="oracao-titulo">👑 Salve-Rainha</h3>
+              <em class="oracao-uso">Antífona mariana rezada ao final do Rosário e das Completas</em>
+            </header>
+            <p class="texto-oracao">
+              Salve, Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos
+              os degredados filhos de Eva. A vós suspiramos, gemendo e chorando neste vale de lágrimas.
+              Eia, pois, advogada nossa, esses vossos olhos misericordiosos a nós volvei. E depois deste
+              desterro, mostrai-nos Jesus, bendito fruto do vosso ventre, ó clemente, ó piedosa, ó doce
+              sempre Virgem Maria.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar Salve-Rainha">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar Salve-Rainha" data-oracao="Salve-Rainha">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar a Salve-Rainha agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 7. ATO DE CONTRIÇÃO -->
+          <article class="oracao-card" data-tipo="tradicional" aria-labelledby="titulo-contrição">
+            <header class="oracao-card-header">
+              <h3 id="titulo-contrição" class="oracao-titulo">💔 Ato de Contrição</h3>
+              <em class="oracao-uso">Rezada antes da confissão ou como exame de consciência diário</em>
+            </header>
+            <p class="texto-oracao">
+              Meu Deus, porque sois infinitamente bom e digno de todo amor, pesa-me de coração de Vos ter
+              ofendido, e proponho firmemente, com o auxílio da vossa graça, não mais pecar, confessar-me
+              e cumprir a penitência. Amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar Ato de Contrição">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar Ato de Contrição" data-oracao="Ato de Contrição">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar o Ato de Contrição agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+        </div><!-- /#oracoes-tradicionais -->
+
+        <!-- ── Daily Christian Prayers ── -->
+        <div
+          id="oracoes-cotidianas"
+          class="tab-panel tab-content"
+          role="tabpanel"
+          aria-labelledby="tab-cotidianas"
+          hidden
+        >
+
+          <!-- 8. Oração ao Acordar -->
+          <article class="oracao-card" data-tipo="cotidiana" aria-labelledby="titulo-acordar">
+            <header class="oracao-card-header">
+              <h3 id="titulo-acordar" class="oracao-titulo">🌅 Oração ao Acordar</h3>
+              <em class="oracao-uso">Comece o dia na presença de Deus — rezar logo ao despertar</em>
+            </header>
+            <p class="texto-oracao">
+              Senhor, mais um dia começa e eu agradeço por esta dádiva. Que eu possa vivê-lo com amor,
+              generosidade e propósito. Guia meus pensamentos, palavras e ações para que reflitam a Tua
+              vontade. Afasta de mim o desânimo e o medo, e enche-me de Tua paz que excede todo entendimento.
+              Que eu seja instrumento do Teu amor para todos que encontrar hoje. Em nome de Jesus, amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar oração ao acordar">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar oração ao acordar" data-oracao="Oração ao Acordar">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar a oração ao acordar agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 9. Oração antes de Dormir -->
+          <article class="oracao-card" data-tipo="cotidiana" aria-labelledby="titulo-dormir">
+            <header class="oracao-card-header">
+              <h3 id="titulo-dormir" class="oracao-titulo">🌙 Oração antes de Dormir</h3>
+              <em class="oracao-uso">Encerre o dia com gratidão e abandono confiante — rezar à noite</em>
+            </header>
+            <p class="texto-oracao">
+              Pai do céu, o dia chega ao fim e eu venho a Ti com gratidão. Obrigado pelas graças recebidas,
+              pelas forças para enfrentar os desafios e pelas pessoas que colocaste no meu caminho. Perdoa-me
+              pelas falhas de hoje e cobre-me com Tua misericórdia enquanto descanso. Entrego meu sono nas
+              Tuas mãos. Que o silêncio da noite restaure meu corpo e minha alma para servir-Te amanhã.
+              Em nome de Jesus, amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar oração antes de dormir">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar oração antes de dormir" data-oracao="Oração antes de Dormir">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar a oração antes de dormir agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 10. Oração de Agradecimento -->
+          <article class="oracao-card" data-tipo="cotidiana" aria-labelledby="titulo-agradecimento">
+            <header class="oracao-card-header">
+              <h3 id="titulo-agradecimento" class="oracao-titulo">🌻 Oração de Agradecimento</h3>
+              <em class="oracao-uso">Cultivar um coração grato — rezar em qualquer momento do dia</em>
+            </header>
+            <p class="texto-oracao">
+              Senhor, paro neste momento para reconhecer a Tua bondade na minha vida. Agradeço pelo ar que
+              respiro, pela saúde que tenho, pelo teto que me abriga e pelo amor das pessoas queridas. Acima
+              de tudo, agradeço pelo Teu amor incondicional que me sustenta em todo o tempo. Ensina-me a
+              enxergar as bênçãos mesmo nos dias difíceis, pois sei que Tu estás sempre comigo. Em nome de
+              Jesus, amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar oração de agradecimento">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar oração de agradecimento" data-oracao="Oração de Agradecimento">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar a oração de agradecimento agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 11. Oração na Ansiedade -->
+          <article class="oracao-card" data-tipo="cotidiana" aria-labelledby="titulo-ansiedade">
+            <header class="oracao-card-header">
+              <h3 id="titulo-ansiedade" class="oracao-titulo">🕊️ Oração na Ansiedade</h3>
+              <em class="oracao-uso">Para momentos de angústia e preocupação — rezar quando o coração aperta</em>
+            </header>
+            <p class="texto-oracao">
+              Senhor Jesus, meu coração está inquieto e minha mente cheia de preocupações. Venho a Ti como
+              estou, com todos os meus medos e incertezas. Tu disseste: "Vinde a mim todos os que estais
+              cansados e sobrecarregados, e eu vos darei descanso." Tomo essa promessa para mim hoje. Solta
+              os nós do meu peito, aquieta minha mente agitada e enche-me da Tua paz sobrenatural. Confio
+              que Tu cuidas de mim. Em nome de Jesus, amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar oração na ansiedade">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar oração na ansiedade" data-oracao="Oração na Ansiedade">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar a oração na ansiedade agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 12. Oração pela Família -->
+          <article class="oracao-card" data-tipo="cotidiana" aria-labelledby="titulo-familia">
+            <header class="oracao-card-header">
+              <h3 id="titulo-familia" class="oracao-titulo">👨‍👩‍👧‍👦 Oração pela Família</h3>
+              <em class="oracao-uso">Intercessão pelos seus entes queridos — rezar diariamente por eles</em>
+            </header>
+            <p class="texto-oracao">
+              Pai eterno, coloco diante de Ti cada membro da minha família. Cobre-os com Tua proteção,
+              guia-os com Tua sabedoria e aquece-os com Teu amor. Onde houver conflito, traz reconciliação.
+              Onde houver tristeza, traz consolo. Onde houver doença, traz cura. Mantém nossa família unida
+              pelo amor e que nossa casa seja um lugar de paz, alegria e fé. Que Tua presença habite entre
+              nós todos os dias. Em nome de Jesus, amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar oração pela família">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar oração pela família" data-oracao="Oração pela Família">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar a oração pela família agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 13. Oração por Sabedoria -->
+          <article class="oracao-card" data-tipo="cotidiana" aria-labelledby="titulo-sabedoria">
+            <header class="oracao-card-header">
+              <h3 id="titulo-sabedoria" class="oracao-titulo">🕯️ Oração por Sabedoria</h3>
+              <em class="oracao-uso">Em momentos de decisão e dúvida — rezar antes de escolhas importantes</em>
+            </header>
+            <p class="texto-oracao">
+              Senhor Deus, Tua Palavra diz que, se alguém pede sabedoria, Tu a dás generosamente sem
+              reprovar. Venho a Ti pedindo discernimento para os desafios desta fase da minha vida. Ilumina
+              minha mente, guia meu coração e fecha as portas que não são para mim. Que eu não me apóie
+              no meu próprio entendimento, mas reconheça a Ti em todos os meus caminhos. Que Tua vontade
+              prevaleça. Em nome de Jesus, amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar oração por sabedoria">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar oração por sabedoria" data-oracao="Oração por Sabedoria">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar a oração por sabedoria agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 14. Oração para Pedir Força -->
+          <article class="oracao-card" data-tipo="cotidiana" aria-labelledby="titulo-forca">
+            <header class="oracao-card-header">
+              <h3 id="titulo-forca" class="oracao-titulo">💪 Oração para Pedir Força</h3>
+              <em class="oracao-uso">Nos momentos de fraqueza e cansaço — rezar quando as forças falham</em>
+            </header>
+            <p class="texto-oracao">
+              Senhor, estou cansado e sinto que minhas forças se esgotaram. Mas lembro que Tu disseste que
+              os que esperam em Ti renovam as suas forças e voam como águias. Renova-me hoje, Senhor. Onde
+              eu sou fraco, sê Tu forte em mim. Onde eu quero desistir, sustenta-me com Tua mão poderosa.
+              Que eu saiba que posso tudo nAquele que me fortalece. Em nome de Jesus, amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar oração para pedir força">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar oração para pedir força" data-oracao="Oração para Pedir Força">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar a oração para pedir força agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+          <!-- 15. Oração contra Tentações -->
+          <article class="oracao-card" data-tipo="cotidiana" aria-labelledby="titulo-tentacoes">
+            <header class="oracao-card-header">
+              <h3 id="titulo-tentacoes" class="oracao-titulo">🛡️ Oração contra Tentações</h3>
+              <em class="oracao-uso">Para resistir ao mal e fortalecer bons hábitos — rezar nos momentos de fraqueza</em>
+            </header>
+            <p class="texto-oracao">
+              Senhor, neste momento em que sinto o peso da tentação, clamo a Ti. Tu és fiel e não permitirás
+              que eu seja tentado além do que posso suportar, mas com a tentação proporcionarás também a
+              saída. Mostre-me essa saída, Senhor. Reveste-me com a armadura de Deus: cinto da verdade,
+              couraça da justiça, escudo da fé e capacete da salvação. Que eu possa resistir ao mal e
+              escolher o bem que quero praticar. Em nome de Jesus, amém.
+            </p>
+            <footer class="oracao-card-footer">
+              <button class="btn btn-sm btn-copiar-oracao" aria-label="Copiar oração contra tentações">📋 Copiar</button>
+              <button class="btn btn-sm btn-favoritar-oracao" aria-label="Favoritar oração contra tentações" data-oracao="Oração contra Tentações">⭐ Favoritar</button>
+              <button class="btn btn-sm btn-primary btn-iniciar-oracao" data-section="oracao" aria-label="Rezar a oração contra tentações agora">🙏 Rezar Agora</button>
+            </footer>
+          </article>
+
+        </div><!-- /#oracoes-cotidianas -->
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ====================================================
+         SECTION: DEZ MANDAMENTOS
+    ==================================================== -->
+    <section id="mandamentos" class="section" aria-labelledby="mandamentos-title">
+      <div class="container">
+        <button class="btn-voltar" data-section="home" aria-label="Voltar para a página inicial">
+          ← Voltar
+        </button>
+
+        <header class="section-header">
+          <h2 id="mandamentos-title" class="section-title">📜 Os Dez Mandamentos</h2>
+          <p class="section-desc">
+            A lei de Deus revelada a Moisés, fundamento da moral cristã e da vida em sociedade.
+          </p>
+        </header>
+
+        <!-- Introduction -->
+        <div class="info-card info-card-highlight">
+          <h3>📖 Sobre os Mandamentos</h3>
+          <p>
+            Os Dez Mandamentos (Decálogo) foram revelados por Deus a Moisés no Monte Sinai e estão registrados
+            em <strong>Êxodo 20,1-17</strong> e <strong>Deuteronômio 5,6-21</strong>. A formulação apresentada
+            aqui é a <strong>tradição católica</strong>, que une os dois mandamentos sobre outros deuses em um
+            único (1.º) e divide o último em dois (9.º e 10.º), totalizando dez — diferente da numeração
+            protestante e reformada, que separa o 1.º e o 2.º e une os dois últimos.
+          </p>
+          <p>
+            Jesus resumiu toda a Lei em dois mandamentos: <em>"Amarás o Senhor teu Deus de todo o teu coração,
+            e ao teu próximo como a ti mesmo."</em> (Mateus 22,37-39)
+          </p>
+        </div>
+
+        <!-- Commandments List -->
+        <ol class="mandamentos-lista" aria-label="Lista dos Dez Mandamentos">
+
+          <!-- 1.º Mandamento -->
+          <li class="mandamento-card" id="mandamento-1">
+            <div class="mandamento-numero" aria-hidden="true">1</div>
+            <div class="mandamento-corpo">
+              <h3 class="mandamento-titulo">Amarás a Deus sobre todas as coisas</h3>
+              <p class="mandamento-ref"><strong>Referência:</strong> Êxodo 20,2-3 | Deuteronômio 5,6-7</p>
+              <p class="mandamento-explicacao">
+                <strong>Significado:</strong> Colocar Deus em primeiro lugar em tudo na vida — acima dos bens
+                materiais, das pessoas e dos próprios desejos. Adorar somente ao Senhor.
+              </p>
+              <p class="mandamento-exemplo">
+                <strong>No dia a dia:</strong> Começar o dia com uma oração, tomar decisões perguntando
+                "isso agrada a Deus?", e não deixar nada afastar você Dele.
+              </p>
+            </div>
+          </li>
+
+          <!-- 2.º Mandamento -->
+          <li class="mandamento-card" id="mandamento-2">
+            <div class="mandamento-numero" aria-hidden="true">2</div>
+            <div class="mandamento-corpo">
+              <h3 class="mandamento-titulo">Não tomarás o nome de Deus em vão</h3>
+              <p class="mandamento-ref"><strong>Referência:</strong> Êxodo 20,7 | Deuteronômio 5,11</p>
+              <p class="mandamento-explicacao">
+                <strong>Significado:</strong> Respeitar o nome de Deus e não usá-lo de forma leviana, como
+                xingamento ou para mentir. Tratar tudo que é sagrado com reverência.
+              </p>
+              <p class="mandamento-exemplo">
+                <strong>No dia a dia:</strong> Evitar usar "meu Deus!" como expressão vazia, e falar de Deus
+                com respeito e amor nas conversas.
+              </p>
+            </div>
+          </li>
+
+          <!-- 3.º Mandamento -->
+          <li class="mandamento-card" id="mandamento-3">
+            <div class="mandamento-numero" aria-hidden="true">3</div>
+            <div class="mandamento-corpo">
+              <h3 class="mandamento-titulo">Guardarás o domingo e as festas de guarda</h3>
+              <p class="mandamento-ref"><strong>Referência:</strong> Êxodo 20,8-10 | Deuteronômio 5,12-15</p>
+              <p class="mandamento-explicacao">
+                <strong>Significado:</strong> Reservar o domingo (Dia do Senhor) para o descanso, a família
+                e a adoração a Deus. Celebrar os dias santos da Igreja.
+              </p>
+              <p class="mandamento-exemplo">
+                <strong>No dia a dia:</strong> Participar da Missa dominical, reduzir o trabalho desnecessário
+                e dedicar tempo à oração e à comunidade neste dia.
+              </p>
+            </div>
+          </li>
+
+          <!-- 4.º Mandamento -->
+          <li class="mandamento-card" id="mandamento-4">
+            <div class="mandamento-numero" aria-hidden="true">4</div>
+            <div class="mandamento-corpo">
+              <h3 class="mandamento-titulo">Honrarás pai e mãe</h3>
+              <p class="mandamento-ref"><strong>Referência:</strong> Êxodo 20,12 | Deuteronômio 5,16</p>
+              <p class="mandamento-explicacao">
+                <strong>Significado:</strong> Tratar os pais e as pessoas mais velhas com respeito, carinho
+                e gratidão. Reconhecer a autoridade legítima na família e na sociedade.
+              </p>
+              <p class="mandamento-exemplo">
+                <strong>No dia a dia:</strong> Ligar para os pais, ouvir seus conselhos com atenção, cuidar
+                deles na velhice e não desrespeitá-los.
+              </p>
+            </div>
+          </li>
+
+          <!-- 5.º Mandamento -->
+          <li class="mandamento-card" id="mandamento-5">
+            <div class="mandamento-numero" aria-hidden="true">5</div>
+            <div class="mandamento-corpo">
+              <h3 class="mandamento-titulo">Não matarás</h3>
+              <p class="mandamento-ref"><strong>Referência:</strong> Êxodo 20,13 | Deuteronômio 5,17</p>
+              <p class="mandamento-explicacao">
+                <strong>Significado:</strong> Respeitar a vida humana em todas as suas formas e fases —
+                desde a concepção até a morte natural. Inclui também o respeito pela própria vida.
+              </p>
+              <p class="mandamento-exemplo">
+                <strong>No dia a dia:</strong> Evitar a violência física e verbal, cuidar da própria saúde,
+                defender a vida dos mais vulneráveis e praticar a misericórdia.
+              </p>
+            </div>
+          </li>
+
+          <!-- 6.º Mandamento -->
+          <li class="mandamento-card" id="mandamento-6">
+            <div class="mandamento-numero" aria-hidden="true">6</div>
+            <div class="mandamento-corpo">
+              <h3 class="mandamento-titulo">Não pecarás contra a castidade</h3>
+              <p class="mandamento-ref"><strong>Referência:</strong> Êxodo 20,14 | Deuteronômio 5,18</p>
+              <p class="mandamento-explicacao">
+                <strong>Significado:</strong> Viver a sexualidade com responsabilidade, respeito e amor,
+                conforme o estado de vida de cada um. Respeitar o próprio corpo e o dos outros.
+              </p>
+              <p class="mandamento-exemplo">
+                <strong>No dia a dia:</strong> Cultivar relacionamentos saudáveis e respeitosos, guardar a
+                pureza de pensamentos e atos, e cuidar do que se consome na mídia.
+              </p>
+            </div>
+          </li>
+
+          <!-- 7.º Mandamento -->
+          <li class="mandamento-card" id="mandamento-7">
+            <div class="mandamento-numero" aria-hidden="true">7</div>
+            <div class="mandamento-corpo">
+              <h3 class="mandamento-titulo">Não furtarás</h3>
+              <p class="mandamento-ref"><strong>Referência:</strong> Êxodo 20,15 | Deuteronômio 5,19</p>
+              <p class="mandamento-explicacao">
+                <strong>Significado:</strong> Respeitar os bens alheios — materiais, intelectuais e morais.
+                Inclui também a honestidade no trabalho, impostos e comércio.
+              </p>
+              <p class="mandamento-exemplo">
+                <strong>No dia a dia:</strong> Pagar o que é justo, devolver o que pertence a outros, ser
+                honesto nas relações profissionais e não tirar proveito injusto de ninguém.
+              </p>
+            </div>
+          </li>
+
+          <!-- 8.º Mandamento -->
+          <li class="mandamento-card" id="mandamento-8">
+            <div class="mandamento-numero" aria-hidden="true">8</div>
+            <div class="mandamento-corpo">
+              <h3 class="mandamento-titulo">Não levantarás falso testemunho</h3>
+              <p class="mandamento-ref"><strong>Referência:</strong> Êxodo 20,16 | Deuteronômio 5,20</p>
+              <p class="mandamento-explicacao">
+                <strong>Significado:</strong> Ser honesto, não mentir nem enganar. Defender a boa fama das
+                pessoas e não propagar rumores ou calúnias.
+              </p>
+              <p class="mandamento-exemplo">
+                <strong>No dia a dia:</strong> Falar a verdade mesmo quando é difícil, não compartilhar
+                fofocas, pedir desculpas quando magoou alguém com palavras e corrigir informações falsas.
+              </p>
+            </div>
+          </li>
+
+          <!-- 9.º Mandamento -->
+          <li class="mandamento-card" id="mandamento-9">
+            <div class="mandamento-numero" aria-hidden="true">9</div>
+            <div class="mandamento-corpo">
+              <h3 class="mandamento-titulo">Não desejarás a mulher do próximo</h3>
+              <p class="mandamento-ref"><strong>Referência:</strong> Êxodo 20,17 | Deuteronômio 5,21</p>
+              <p class="mandamento-explicacao">
+                <strong>Significado:</strong> Cultivar relacionamentos puros e respeitosos. Guardar a pureza
+                do coração e não nutrir desejos que violem o compromisso matrimonial alheio ou próprio.
+              </p>
+              <p class="mandamento-exemplo">
+                <strong>No dia a dia:</strong> Evitar conteúdos que estimulem pensamentos impuros, valorizar
+                as pessoas como pessoas e não como objetos, e cuidar da integridade dos relacionamentos.
+              </p>
+            </div>
+          </li>
+
+          <!-- 10.º Mandamento -->
+          <li class="mandamento-card" id="mandamento-10">
+            <div class="mandamento-numero" aria-hidden="true">10</div>
+            <div class="mandamento-corpo">
+              <h3 class="mandamento-titulo">Não cobiçarás as coisas alheias</h3>
+              <p class="mandamento-ref"><strong>Referência:</strong> Êxodo 20,17 | Deuteronômio 5,21</p>
+              <p class="mandamento-explicacao">
+                <strong>Significado:</strong> Ser grato pelo que se tem, sem invejar o próximo. Combater
+                a ganância e cultivar um coração generoso e contente.
+              </p>
+              <p class="mandamento-exemplo">
+                <strong>No dia a dia:</strong> Praticar a gratidão diária, celebrar o sucesso dos outros
+                sem inveja, e ser generoso com o que você tem, por menor que pareça.
+              </p>
+            </div>
+          </li>
+
+        </ol><!-- /.mandamentos-lista -->
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ====================================================
+         SECTION: COMO LER A BÍBLIA
+    ==================================================== -->
+    <section id="biblia" class="section" aria-labelledby="biblia-title">
+      <div class="container">
+        <button class="btn-voltar" data-section="home" aria-label="Voltar para a página inicial">
+          ← Voltar
+        </button>
+
+        <header class="section-header">
+          <h2 id="biblia-title" class="section-title">📖 Como Começar a Ler a Bíblia</h2>
+          <p class="section-desc">
+            A Bíblia é a Palavra de Deus para você. Aqui está um guia prático para dar os primeiros passos.
+          </p>
+        </header>
+
+        <!-- What is the Bible — 4 Info Cards -->
+        <h3 class="subsection-title">O que é a Bíblia?</h3>
+        <div class="info-cards-grid">
+
+          <div class="info-card">
+            <div class="info-card-icon" aria-hidden="true">📚</div>
+            <h4>Uma Biblioteca Sagrada</h4>
+            <p>
+              A Bíblia é uma coleção de 73 livros (Bíblia Católica) escritos ao longo de mais de 1.000 anos
+              por cerca de 40 autores diferentes, todos inspirados pelo Espírito Santo.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon" aria-hidden="true">🕊️</div>
+            <h4>Palavra Viva de Deus</h4>
+            <p>
+              "Toda a Escritura é divinamente inspirada e útil para ensinar, reprovar, corrigir e instruir
+              na justiça." (2 Timóteo 3,16). É uma carta de amor de Deus para a humanidade.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon" aria-hidden="true">📖</div>
+            <h4>Dois Grandes Testamentos</h4>
+            <p>
+              O <strong>Antigo Testamento</strong> (46 livros) narra a história de Israel e a aliança de Deus
+              com seu povo. O <strong>Novo Testamento</strong> (27 livros) apresenta Jesus Cristo e a Igreja.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon" aria-hidden="true">❤️</div>
+            <h4>Leitura que Transforma</h4>
+            <p>
+              Ler a Bíblia não é apenas adquirir conhecimento — é encontrar-se com o Deus vivo. Cada página
+              revela o amor, a fidelidade e o plano de salvação de Deus para cada ser humano.
+            </p>
+          </div>
+
+        </div><!-- /.info-cards-grid -->
+
+        <!-- Recommended Reading Order -->
+        <h3 class="subsection-title">Por onde começar?</h3>
+        <p class="subsection-desc">
+          Especialistas recomendam não ler a Bíblia do início ao fim para quem está começando.
+          Estes livros são os melhores pontos de entrada:
+        </p>
+        <div class="livros-grid">
+
+          <div class="livro-card">
+            <div class="livro-ordem" aria-label="1.º livro recomendado">1.º</div>
+            <h4>Marcos</h4>
+            <p>O evangelho mais curto e dinâmico. Ideal para quem nunca leu a Bíblia — vai direto à vida de Jesus.</p>
+          </div>
+
+          <div class="livro-card">
+            <div class="livro-ordem" aria-label="2.º livro recomendado">2.º</div>
+            <h4>Lucas</h4>
+            <p>Um evangelho rico em misericórdia, parábolas e histórias tocantes. Destaca o amor de Jesus pelos marginalizados.</p>
+          </div>
+
+          <div class="livro-card">
+            <div class="livro-ordem" aria-label="3.º livro recomendado">3.º</div>
+            <h4>Atos dos Apóstolos</h4>
+            <p>A história da Igreja primitiva. Como o Espírito Santo transformou pescadores em testemunhas do mundo.</p>
+          </div>
+
+          <div class="livro-card">
+            <div class="livro-ordem" aria-label="4.º livro recomendado">4.º</div>
+            <h4>João</h4>
+            <p>O evangelho mais profundo e teológico. Cheio de símbolos e revelações sobre a identidade de Jesus.</p>
+          </div>
+
+          <div class="livro-card">
+            <div class="livro-ordem" aria-label="5.º livro recomendado">5.º</div>
+            <h4>Salmos</h4>
+            <p>150 orações e poemas inspirados. Para ler em qualquer situação — alegria, tristeza, medo ou gratidão.</p>
+          </div>
+
+          <div class="livro-card">
+            <div class="livro-ordem" aria-label="6.º livro recomendado">6.º</div>
+            <h4>Gênesis</h4>
+            <p>O começo de tudo — criação, humanidade, pecado e promessa de redenção. As raízes de toda a história bíblica.</p>
+          </div>
+
+        </div><!-- /.livros-grid -->
+
+        <!-- 7-Day Reading Plan -->
+        <h3 class="subsection-title">🗓️ Plano de Leitura: 7 Dias</h3>
+        <p class="subsection-desc">
+          Leia um trecho por dia, reflita e anote suas impressões. Marque como concluído ao terminar.
+        </p>
+
+        <div class="plano-leitura" role="list">
+
+          <!-- Day 1 -->
+          <article id="plano-dia-1" class="plano-dia-card" role="listitem" aria-labelledby="plano-titulo-1">
+            <div class="plano-dia-header">
+              <span class="plano-dia-numero" aria-hidden="true">Dia 1</span>
+              <h4 id="plano-titulo-1">Marcos 1,1-20</h4>
+              <span class="plano-tema">Tema: O chamado de Jesus</span>
+            </div>
+            <p class="plano-explicacao">
+              No início do evangelho, Marcos nos apresenta João Batista preparando o caminho,
+              o batismo de Jesus e os primeiros discípulos sendo chamados às margens do mar da Galileia.
+              Jesus chama com uma palavra simples mas transformadora: <em>"Segui-me."</em>
+            </p>
+            <p class="plano-questao">
+              <strong>❓ Para refletir:</strong> Jesus está te chamando a segui-Lo hoje.
+              O que você precisaria "largar" (como os discípulos largaram as redes) para responder a esse chamado?
+            </p>
+            <label class="plano-notas-label" for="nota-dia-1">📝 Minhas anotações:</label>
+            <textarea
+              id="nota-dia-1"
+              class="plano-notas"
+              rows="3"
+              placeholder="Escreva o que o Senhor falou ao seu coração hoje…"
+              aria-label="Notas do dia 1"
+            ></textarea>
+            <button id="btn-dia-1" class="btn btn-success plano-btn-concluir" data-dia="1" aria-label="Marcar dia 1 como concluído">
+              ✅ Marcar como Concluído
+            </button>
+          </article>
+
+          <!-- Day 2 -->
+          <article id="plano-dia-2" class="plano-dia-card" role="listitem" aria-labelledby="plano-titulo-2">
+            <div class="plano-dia-header">
+              <span class="plano-dia-numero" aria-hidden="true">Dia 2</span>
+              <h4 id="plano-titulo-2">Marcos 4,1-20</h4>
+              <span class="plano-tema">Tema: A parábola do semeador</span>
+            </div>
+            <p class="plano-explicacao">
+              Jesus conta a história de um semeador que lança sementes em diferentes tipos de terra.
+              A própria parábola é explicada por Jesus: a semente é a Palavra de Deus, e os tipos de
+              terra representam os diferentes corações que a recebem.
+            </p>
+            <p class="plano-questao">
+              <strong>❓ Para refletir:</strong> Qual tipo de "terra" representa melhor seu coração
+              no momento? Há pedras ou espinhos que estão impedindo a Palavra de crescer em você?
+            </p>
+            <label class="plano-notas-label" for="nota-dia-2">📝 Minhas anotações:</label>
+            <textarea
+              id="nota-dia-2"
+              class="plano-notas"
+              rows="3"
+              placeholder="Escreva o que o Senhor falou ao seu coração hoje…"
+              aria-label="Notas do dia 2"
+            ></textarea>
+            <button id="btn-dia-2" class="btn btn-success plano-btn-concluir" data-dia="2" aria-label="Marcar dia 2 como concluído">
+              ✅ Marcar como Concluído
+            </button>
+          </article>
+
+          <!-- Day 3 -->
+          <article id="plano-dia-3" class="plano-dia-card" role="listitem" aria-labelledby="plano-titulo-3">
+            <div class="plano-dia-header">
+              <span class="plano-dia-numero" aria-hidden="true">Dia 3</span>
+              <h4 id="plano-titulo-3">Lucas 15,1-32</h4>
+              <span class="plano-tema">Tema: O filho pródigo e o amor do Pai</span>
+            </div>
+            <p class="plano-explicacao">
+              Um dos textos mais tocantes de toda a Bíblia. Jesus conta três parábolas sobre a misericórdia:
+              a ovelha perdida, a moeda perdida e o filho pródigo. Em todas elas, o destaque é a alegria
+              de Deus quando aquele que estava perdido é encontrado.
+            </p>
+            <p class="plano-questao">
+              <strong>❓ Para refletir:</strong> Em que situação da sua vida você se identifica com
+              o filho pródigo? O que te impede de voltar para o abraço do Pai?
+            </p>
+            <label class="plano-notas-label" for="nota-dia-3">📝 Minhas anotações:</label>
+            <textarea
+              id="nota-dia-3"
+              class="plano-notas"
+              rows="3"
+              placeholder="Escreva o que o Senhor falou ao seu coração hoje…"
+              aria-label="Notas do dia 3"
+            ></textarea>
+            <button id="btn-dia-3" class="btn btn-success plano-btn-concluir" data-dia="3" aria-label="Marcar dia 3 como concluído">
+              ✅ Marcar como Concluído
+            </button>
+          </article>
+
+          <!-- Day 4 -->
+          <article id="plano-dia-4" class="plano-dia-card" role="listitem" aria-labelledby="plano-titulo-4">
+            <div class="plano-dia-header">
+              <span class="plano-dia-numero" aria-hidden="true">Dia 4</span>
+              <h4 id="plano-titulo-4">João 1,1-18</h4>
+              <span class="plano-tema">Tema: No princípio era o Verbo</span>
+            </div>
+            <p class="plano-explicacao">
+              O prólogo do evangelho de João é uma das passagens mais profundas da Bíblia. João revela que
+              Jesus (o Verbo) existia desde antes da criação, que é Deus, e que <em>"o Verbo se fez carne
+              e habitou entre nós"</em> — o mistério da Encarnação.
+            </p>
+            <p class="plano-questao">
+              <strong>❓ Para refletir:</strong> O eterno Filho de Deus tornou-se humano por amor a você.
+              Como essa verdade muda a forma como você enxerga a si mesmo e a sua vida?
+            </p>
+            <label class="plano-notas-label" for="nota-dia-4">📝 Minhas anotações:</label>
+            <textarea
+              id="nota-dia-4"
+              class="plano-notas"
+              rows="3"
+              placeholder="Escreva o que o Senhor falou ao seu coração hoje…"
+              aria-label="Notas do dia 4"
+            ></textarea>
+            <button id="btn-dia-4" class="btn btn-success plano-btn-concluir" data-dia="4" aria-label="Marcar dia 4 como concluído">
+              ✅ Marcar como Concluído
+            </button>
+          </article>
+
+          <!-- Day 5 -->
+          <article id="plano-dia-5" class="plano-dia-card" role="listitem" aria-labelledby="plano-titulo-5">
+            <div class="plano-dia-header">
+              <span class="plano-dia-numero" aria-hidden="true">Dia 5</span>
+              <h4 id="plano-titulo-5">João 3,1-21</h4>
+              <span class="plano-tema">Tema: O novo nascimento</span>
+            </div>
+            <p class="plano-explicacao">
+              Nicodemos, um líder religioso, vai a Jesus à noite em busca de respostas. Jesus revela o
+              conceito do "novo nascimento" pelo Espírito e pronuncia um dos versículos mais conhecidos da
+              Bíblia: <em>"Porque Deus amou tanto o mundo que deu o seu Filho único."</em> (João 3,16)
+            </p>
+            <p class="plano-questao">
+              <strong>❓ Para refletir:</strong> O que significa para você "nascer de novo"?
+              Há áreas da sua vida que precisam ser transformadas pelo Espírito de Deus?
+            </p>
+            <label class="plano-notas-label" for="nota-dia-5">📝 Minhas anotações:</label>
+            <textarea
+              id="nota-dia-5"
+              class="plano-notas"
+              rows="3"
+              placeholder="Escreva o que o Senhor falou ao seu coração hoje…"
+              aria-label="Notas do dia 5"
+            ></textarea>
+            <button id="btn-dia-5" class="btn btn-success plano-btn-concluir" data-dia="5" aria-label="Marcar dia 5 como concluído">
+              ✅ Marcar como Concluído
+            </button>
+          </article>
+
+          <!-- Day 6 -->
+          <article id="plano-dia-6" class="plano-dia-card" role="listitem" aria-labelledby="plano-titulo-6">
+            <div class="plano-dia-header">
+              <span class="plano-dia-numero" aria-hidden="true">Dia 6</span>
+              <h4 id="plano-titulo-6">Salmos 23</h4>
+              <span class="plano-tema">Tema: O Senhor é o meu pastor</span>
+            </div>
+            <p class="plano-explicacao">
+              Um dos textos mais amados de toda a Bíblia, escrito por Davi. Com a imagem do pastor e do seu
+              rebanho, Davi descreve o cuidado, a presença e a proteção de Deus em todos os momentos da vida,
+              mesmo nas travessias pelos "vales sombrios".
+            </p>
+            <p class="plano-questao">
+              <strong>❓ Para refletir:</strong> Em qual "vale sombrio" você está agora?
+              Como é para você saber que o Bom Pastor está com você exatamente ali?
+            </p>
+            <label class="plano-notas-label" for="nota-dia-6">📝 Minhas anotações:</label>
+            <textarea
+              id="nota-dia-6"
+              class="plano-notas"
+              rows="3"
+              placeholder="Escreva o que o Senhor falou ao seu coração hoje…"
+              aria-label="Notas do dia 6"
+            ></textarea>
+            <button id="btn-dia-6" class="btn btn-success plano-btn-concluir" data-dia="6" aria-label="Marcar dia 6 como concluído">
+              ✅ Marcar como Concluído
+            </button>
+          </article>
+
+          <!-- Day 7 -->
+          <article id="plano-dia-7" class="plano-dia-card" role="listitem" aria-labelledby="plano-titulo-7">
+            <div class="plano-dia-header">
+              <span class="plano-dia-numero" aria-hidden="true">Dia 7</span>
+              <h4 id="plano-titulo-7">Gênesis 1,1 – 2,3</h4>
+              <span class="plano-tema">Tema: A criação</span>
+            </div>
+            <p class="plano-explicacao">
+              O primeiro capítulo da Bíblia revela que tudo foi criado por Deus com propósito e que é
+              <em>"muito bom"</em>. O ponto culminante da criação é o ser humano, feito à imagem e semelhança
+              de Deus, e o sétimo dia de descanso — um convite ao ritmo de trabalho e repouso.
+            </p>
+            <p class="plano-questao">
+              <strong>❓ Para refletir:</strong> Você se vê como alguém feito à imagem de Deus — com valor,
+              propósito e dignidade? O que mudaria em sua autoestima se você levasse isso a sério?
+            </p>
+            <label class="plano-notas-label" for="nota-dia-7">📝 Minhas anotações:</label>
+            <textarea
+              id="nota-dia-7"
+              class="plano-notas"
+              rows="3"
+              placeholder="Escreva o que o Senhor falou ao seu coração hoje…"
+              aria-label="Notas do dia 7"
+            ></textarea>
+            <button id="btn-dia-7" class="btn btn-success plano-btn-concluir" data-dia="7" aria-label="Marcar dia 7 como concluído">
+              ✅ Marcar como Concluído
+            </button>
+          </article>
+
+        </div><!-- /.plano-leitura -->
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ====================================================
+         SECTION: SUPERAR HÁBITOS
+    ==================================================== -->
+    <section id="habitos" class="section" aria-labelledby="habitos-title">
+      <div class="container">
+        <button class="btn-voltar" data-section="home" aria-label="Voltar para a página inicial">
+          ← Voltar
+        </button>
+
+        <header class="section-header">
+          <h2 id="habitos-title" class="section-title">🌱 Superando Hábitos com Fé</h2>
+          <p class="section-desc">
+            Um plano de 7 dias para transformar hábitos com apoio espiritual e prático.
+          </p>
+        </header>
+
+        <!-- Health Disclaimer -->
+        <div class="disclaimer-card" role="alert" aria-label="Aviso importante sobre saúde">
+          <h3>⚠️ Aviso Importante</h3>
+          <p>
+            <strong>Este conteúdo é de natureza espiritual e educativa, não substitui acompanhamento médico
+            ou psicológico profissional.</strong> Se você enfrenta dependências (álcool, drogas, tabaco,
+            jogos, etc.) ou problemas de saúde mental, procure um profissional de saúde qualificado.
+            A fé e o apoio espiritual são complementos valiosos, mas não substituem o tratamento adequado.
+          </p>
+          <p>
+            CVV (Centro de Valorização da Vida): <strong>188</strong> (24h) |
+            CAPS (Centro de Atenção Psicossocial): procure na sua cidade.
+          </p>
+        </div>
+
+        <!-- Info Cards about Habit Change -->
+        <h3 class="subsection-title">O que a ciência e a fé dizem sobre hábitos</h3>
+        <div class="info-cards-grid">
+
+          <div class="info-card">
+            <div class="info-card-icon" aria-hidden="true">🧠</div>
+            <h4>Como hábitos se formam</h4>
+            <p>
+              Todo hábito segue um ciclo: <strong>gatilho → rotina → recompensa</strong>. Entender esse
+              ciclo é o primeiro passo para modificá-lo conscientemente.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon" aria-hidden="true">📅</div>
+            <h4>21 a 66 dias</h4>
+            <p>
+              Pesquisas mostram que formar um novo hábito leva entre 21 e 66 dias de prática consistente.
+              Paciência e persistência são essenciais — não perfeição.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon" aria-hidden="true">✝</div>
+            <h4>A fé como âncora</h4>
+            <p>
+              "Posso tudo naquele que me fortalece." (Fil 4,13). A espiritualidade oferece motivação
+              profunda, comunidade de apoio e recursos como a oração e os sacramentos.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon" aria-hidden="true">🔄</div>
+            <h4>Substituição, não supressão</h4>
+            <p>
+              Tentar simplesmente parar um hábito raramente funciona. É mais eficaz substituir o
+              comportamento indesejado por um saudável que atenda à mesma necessidade.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon" aria-hidden="true">🤝</div>
+            <h4>O poder da comunidade</h4>
+            <p>
+              Compartilhar seus objetivos com alguém de confiança aumenta muito as chances de sucesso.
+              A Igreja, os amigos e os grupos de apoio são recursos preciosos.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon" aria-hidden="true">💙</div>
+            <h4>Recaída não é fracasso</h4>
+            <p>
+              A recaída faz parte do processo de mudança. O que diferencia quem muda é a capacidade de
+              se levantar com compaixão — não culpa — e continuar.
+            </p>
+          </div>
+
+        </div><!-- /.info-cards-grid -->
+
+        <!-- 7-Day Habit Plan -->
+        <h3 class="subsection-title">🗓️ Plano de 7 Dias</h3>
+
+        <!-- Personal Goal -->
+        <div class="meta-pessoal-box">
+          <label for="meta-pessoal-input" class="meta-pessoal-label">
+            <strong>🎯 Minha Meta Pessoal:</strong>
+          </label>
+          <div class="meta-pessoal-input-group">
+            <input
+              type="text"
+              id="meta-pessoal-input"
+              class="meta-pessoal-input"
+              placeholder="Ex.: Parar de fumar, reduzir o uso do celular, praticar mais exercícios…"
+              aria-label="Digite sua meta pessoal"
+              maxlength="200"
+            />
+            <button id="btn-salvar-meta" class="btn btn-primary" aria-label="Salvar minha meta pessoal">
+              💾 Salvar
+            </button>
+          </div>
+          <p id="meta-pessoal-display" class="meta-pessoal-display" aria-live="polite"></p>
+        </div>
+
+        <div class="plano-habitos" role="list">
+
+          <!-- Day 1 -->
+          <article id="habito-dia-1" class="habito-dia-card" role="listitem" aria-labelledby="habito-titulo-1">
+            <div class="habito-dia-header">
+              <span class="habito-dia-numero" aria-hidden="true">Dia 1</span>
+              <h4 id="habito-titulo-1">🔍 Conhecer seus gatilhos</h4>
+            </div>
+            <p class="habito-descricao">
+              Observe e anote as situações que despertam o hábito que você quer superar.
+              Quando acontece? Onde? Com quem? Como você está se sentindo? O autoconhecimento é o início
+              de toda mudança real.
+            </p>
+            <p class="habito-espiritualidade">
+              <em>✝ "Examina-me, ó Deus, e conhece o meu coração." (Salmo 139,23)</em>
+            </p>
+            <label class="habito-check-label" for="check-habito-1">
+              <input type="checkbox" id="check-habito-1" class="habito-checkbox" aria-label="Marcar dia 1 do plano de hábitos como concluído" />
+              Concluí esta etapa hoje
+            </label>
+          </article>
+
+          <!-- Day 2 -->
+          <article id="habito-dia-2" class="habito-dia-card" role="listitem" aria-labelledby="habito-titulo-2">
+            <div class="habito-dia-header">
+              <span class="habito-dia-numero" aria-hidden="true">Dia 2</span>
+              <h4 id="habito-titulo-2">🔀 Encontrar um substituto</h4>
+            </div>
+            <p class="habito-descricao">
+              Escolha uma atividade saudável para os momentos de tentação. Quando surgir o impulso,
+              você vai fazer: dar uma caminhada, beber água, ligar para um amigo, orar ou praticar
+              respiração profunda.
+            </p>
+            <p class="habito-espiritualidade">
+              <em>✝ "Não te deixes vencer pelo mal; pelo contrário, vence o mal com o bem." (Romanos 12,21)</em>
+            </p>
+            <label class="habito-check-label" for="check-habito-2">
+              <input type="checkbox" id="check-habito-2" class="habito-checkbox" aria-label="Marcar dia 2 do plano de hábitos como concluído" />
+              Concluí esta etapa hoje
+            </label>
+          </article>
+
+          <!-- Day 3 -->
+          <article id="habito-dia-3" class="habito-dia-card" role="listitem" aria-labelledby="habito-titulo-3">
+            <div class="habito-dia-header">
+              <span class="habito-dia-numero" aria-hidden="true">Dia 3</span>
+              <h4 id="habito-titulo-3">🌄 Criar uma rotina matinal</h4>
+            </div>
+            <p class="habito-descricao">
+              Comece o dia com intenção. Experimente: acordar 20 minutos mais cedo, fazer uma oração
+              de entrega, beber um copo de água, fazer uma pequena atividade física e definir sua
+              intenção para o dia.
+            </p>
+            <p class="habito-espiritualidade">
+              <em>✝ "De manhã, Senhor, ouves a minha voz; de manhã te apresento a minha súplica." (Salmo 5,4)</em>
+            </p>
+            <label class="habito-check-label" for="check-habito-3">
+              <input type="checkbox" id="check-habito-3" class="habito-checkbox" aria-label="Marcar dia 3 do plano de hábitos como concluído" />
+              Concluí esta etapa hoje
+            </label>
+          </article>
+
+          <!-- Day 4 -->
+          <article id="habito-dia-4" class="habito-dia-card" role="listitem" aria-labelledby="habito-titulo-4">
+            <div class="habito-dia-header">
+              <span class="habito-dia-numero" aria-hidden="true">Dia 4</span>
+              <h4 id="habito-titulo-4">🤝 Buscar apoio</h4>
+            </div>
+            <p class="habito-descricao">
+              Converse com alguém de confiança sobre seus objetivos — um amigo, familiar, padre, pastor
+              ou conselheiro. Não precisa carregar isso sozinho. A comunidade é um presente de Deus.
+            </p>
+            <p class="habito-espiritualidade">
+              <em>✝ "Melhor é serem dois do que um, porque têm melhor paga do seu trabalho." (Eclesiastes 4,9)</em>
+            </p>
+            <label class="habito-check-label" for="check-habito-4">
+              <input type="checkbox" id="check-habito-4" class="habito-checkbox" aria-label="Marcar dia 4 do plano de hábitos como concluído" />
+              Concluí esta etapa hoje
+            </label>
+          </article>
+
+          <!-- Day 5 -->
+          <article id="habito-dia-5" class="habito-dia-card" role="listitem" aria-labelledby="habito-titulo-5">
+            <div class="habito-dia-header">
+              <span class="habito-dia-numero" aria-hidden="true">Dia 5</span>
+              <h4 id="habito-titulo-5">💪 Cuidar do corpo</h4>
+            </div>
+            <p class="habito-descricao">
+              Durma bem (7-8 horas), alimente-se com cuidado, hidrate-se e pratique alguma atividade
+              física. Corpo e alma são inseparáveis — cuidar do corpo fortalece a vontade e a disposição.
+            </p>
+            <p class="habito-espiritualidade">
+              <em>✝ "O vosso corpo é templo do Espírito Santo." (1 Coríntios 6,19)</em>
+            </p>
+            <label class="habito-check-label" for="check-habito-5">
+              <input type="checkbox" id="check-habito-5" class="habito-checkbox" aria-label="Marcar dia 5 do plano de hábitos como concluído" />
+              Concluí esta etapa hoje
+            </label>
+          </article>
+
+          <!-- Day 6 -->
+          <article id="habito-dia-6" class="habito-dia-card" role="listitem" aria-labelledby="habito-titulo-6">
+            <div class="habito-dia-header">
+              <span class="habito-dia-numero" aria-hidden="true">Dia 6</span>
+              <h4 id="habito-titulo-6">💙 Lidar com recaídas</h4>
+            </div>
+            <p class="habito-descricao">
+              Aprenda a reagir com compaixão em vez de culpa quando houver uma recaída. Recaída é parte
+              do processo — o que importa é se levantar. Confesse a Deus, perdoe-se e recomece.
+              Cada tentativa conta.
+            </p>
+            <p class="habito-espiritualidade">
+              <em>✝ "O justo cai sete vezes e se levanta." (Provérbios 24,16)</em>
+            </p>
+            <label class="habito-check-label" for="check-habito-6">
+              <input type="checkbox" id="check-habito-6" class="habito-checkbox" aria-label="Marcar dia 6 do plano de hábitos como concluído" />
+              Concluí esta etapa hoje
+            </label>
+          </article>
+
+          <!-- Day 7 -->
+          <article id="habito-dia-7" class="habito-dia-card" role="listitem" aria-labelledby="habito-titulo-7">
+            <div class="habito-dia-header">
+              <span class="habito-dia-numero" aria-hidden="true">Dia 7</span>
+              <h4 id="habito-titulo-7">🎉 Celebrar avanços</h4>
+            </div>
+            <p class="habito-descricao">
+              Reconheça e valorize cada passo dado, por menor que pareça. Agradeça a Deus pelo crescimento.
+              Escreva o que aprendeu sobre você nesta semana e planeje como seguir nos próximos dias.
+            </p>
+            <p class="habito-espiritualidade">
+              <em>✝ "Alegrai-vos sempre no Senhor; outra vez digo, alegrai-vos." (Filipenses 4,4)</em>
+            </p>
+            <label class="habito-check-label" for="check-habito-7">
+              <input type="checkbox" id="check-habito-7" class="habito-checkbox" aria-label="Marcar dia 7 do plano de hábitos como concluído" />
+              Concluí esta etapa hoje
+            </label>
+          </article>
+
+        </div><!-- /.plano-habitos -->
+
+        <!-- Professional Help Reminder -->
+        <div class="ajuda-profissional" role="complementary" aria-label="Lembrete sobre ajuda profissional">
+          <h3>🩺 Precisa de Ajuda Profissional?</h3>
+          <p>
+            Se você está enfrentando dependências, transtornos de humor, ansiedade severa ou outros
+            problemas de saúde mental, não hesite em buscar apoio especializado. A fé e o tratamento
+            profissional andam juntos.
+          </p>
+          <ul class="ajuda-lista">
+            <li>🏥 <strong>Médico clínico geral</strong> — primeiro contato no SUS</li>
+            <li>🧠 <strong>Psicólogo / Psiquiatra</strong> — saúde mental especializada</li>
+            <li>🤝 <strong>Grupos de apoio</strong> — AA, NA, grupos paroquiais</li>
+            <li>📞 <strong>CVV</strong> — 188 (ligação gratuita, 24 horas)</li>
+            <li>⛪ <strong>Pastoral da Sobriedade</strong> — pastoraldasobriedade.org.br</li>
+          </ul>
+        </div>
+
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ====================================================
+         SECTION: PROGRESSO ESPIRITUAL
+    ==================================================== -->
+    <section id="progresso" class="section" aria-labelledby="progresso-title">
+      <div class="container">
+        <button class="btn-voltar" data-section="home" aria-label="Voltar para a página inicial">
+          ← Voltar
+        </button>
+
+        <header class="section-header">
+          <h2 id="progresso-title" class="section-title">📊 Meu Progresso Espiritual</h2>
+          <p class="section-desc">
+            Acompanhe sua jornada. Cada pequeno passo conta — Deus vê o coração, não apenas os resultados.
+          </p>
+        </header>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid" role="list" aria-label="Estatísticas de progresso">
+          <div class="stat-card" role="listitem">
+            <div id="stat-oracoes" class="stat-numero" aria-label="Total de orações registradas">0</div>
+            <div class="stat-label">Orações</div>
+            <div class="stat-icon" aria-hidden="true">🙏</div>
+          </div>
+          <div class="stat-card" role="listitem">
+            <div id="stat-leituras" class="stat-numero" aria-label="Total de leituras concluídas">0</div>
+            <div class="stat-label">Leituras</div>
+            <div class="stat-icon" aria-hidden="true">📖</div>
+          </div>
+          <div class="stat-card" role="listitem">
+            <div id="stat-versiculos" class="stat-numero" aria-label="Versículos favoritados">0</div>
+            <div class="stat-label">Favoritos</div>
+            <div class="stat-icon" aria-hidden="true">⭐</div>
+          </div>
+          <div class="stat-card" role="listitem">
+            <div id="stat-metas" class="stat-numero" aria-label="Metas do dia concluídas">0</div>
+            <div class="stat-label">Metas Hoje</div>
+            <div class="stat-icon" aria-hidden="true">✅</div>
+          </div>
+        </div>
+
+        <!-- Today's Goals -->
+        <div class="metas-hoje" aria-labelledby="metas-hoje-titulo">
+          <h3 id="metas-hoje-titulo">🎯 Metas de Hoje</h3>
+          <ul class="metas-lista" role="list">
+            <li class="meta-item" role="listitem">
+              <label for="meta-orar-hoje" class="meta-label">
+                <input type="checkbox" id="meta-orar-hoje" class="meta-checkbox" aria-describedby="meta-orar-desc" />
+                <span class="meta-icon" aria-hidden="true">🙏</span>
+                <span id="meta-orar-desc">Orei hoje</span>
+              </label>
+            </li>
+            <li class="meta-item" role="listitem">
+              <label for="meta-ler-hoje" class="meta-label">
+                <input type="checkbox" id="meta-ler-hoje" class="meta-checkbox" aria-describedby="meta-ler-desc" />
+                <span class="meta-icon" aria-hidden="true">📖</span>
+                <span id="meta-ler-desc">Li a Bíblia hoje</span>
+              </label>
+            </li>
+            <li class="meta-item" role="listitem">
+              <label for="meta-refletir-hoje" class="meta-label">
+                <input type="checkbox" id="meta-refletir-hoje" class="meta-checkbox" aria-describedby="meta-refletir-desc" />
+                <span class="meta-icon" aria-hidden="true">💭</span>
+                <span id="meta-refletir-desc">Refleti sobre o evangelho</span>
+              </label>
+            </li>
+            <li class="meta-item" role="listitem">
+              <label for="meta-agradecer-hoje" class="meta-label">
+                <input type="checkbox" id="meta-agradecer-hoje" class="meta-checkbox" aria-describedby="meta-agradecer-desc" />
+                <span class="meta-icon" aria-hidden="true">🌻</span>
+                <span id="meta-agradecer-desc">Agradeci a Deus hoje</span>
+              </label>
+            </li>
+          </ul>
+
+          <button id="btn-registrar-progresso" class="btn btn-primary">
+            ✅ Registrar Oração do Dia
+          </button>
+        </div>
+
+        <!-- Favorites Section -->
+        <div class="favoritos-progresso">
+          <h3>⭐ Meus Favoritos</h3>
+
+          <!-- Favorite Verses Tab -->
+          <div class="favoritos-tabs" role="tablist" aria-label="Favoritos">
+            <button
+              class="tab-btn tab-btn-active active"
+              role="tab"
+              aria-selected="true"
+              aria-controls="lista-favoritos-versiculos"
+              data-tab="lista-favoritos-versiculos"
+              id="tab-fav-versiculos"
+            >✨ Versículos</button>
+            <button
+              class="tab-btn"
+              role="tab"
+              aria-selected="false"
+              aria-controls="lista-favoritos-oracoes"
+              data-tab="lista-favoritos-oracoes"
+              id="tab-fav-oracoes"
+            >🤲 Orações</button>
+          </div>
+
+          <div id="lista-favoritos-versiculos" class="favoritos-lista" role="tabpanel" aria-labelledby="tab-fav-versiculos">
+            <p class="favoritos-vazio">Você ainda não favoritou nenhum versículo. Vá para "Versículos do Dia" e toque na estrela ⭐.</p>
+          </div>
+          <div id="lista-favoritos-oracoes" class="favoritos-lista" role="tabpanel" aria-labelledby="tab-fav-oracoes" hidden>
+            <p class="favoritos-vazio">Você ainda não favoritou nenhuma oração. Vá para "Orações" e toque na estrela ⭐.</p>
+          </div>
+        </div>
+
+        <!-- Personal Notes -->
+        <div class="notas-pessoais-box">
+          <h3>📓 Minhas Anotações Pessoais</h3>
+          <p class="notas-desc">Um espaço privado para suas reflexões, orações e pedidos a Deus.</p>
+          <label for="notas-pessoais" class="sr-only">Minhas anotações pessoais</label>
+          <textarea
+            id="notas-pessoais"
+            class="notas-textarea"
+            rows="6"
+            placeholder="Escreva aqui suas reflexões, pedidos de oração, agradecimentos… Este espaço é seu."
+            aria-label="Campo de anotações pessoais"
+          ></textarea>
+          <button id="btn-salvar-notas" class="btn btn-primary">
+            💾 Salvar Anotações
+          </button>
+        </div>
+
+        <!-- Data Info Notice -->
+        <div class="data-notice info-card" role="note">
+          <div class="info-card-icon" aria-hidden="true">🔒</div>
+          <h4>Seus dados são seus</h4>
+          <p>
+            Todos os dados deste aplicativo são salvos <strong>apenas no seu dispositivo</strong>
+            (localStorage do navegador). Nenhuma informação é enviada para servidores externos.
+            Se você limpar os dados do navegador, os dados do app serão apagados.
+          </p>
+        </div>
+
+        <!-- Delete Data -->
+        <div class="apagar-dados-box">
+          <button id="btn-apagar-dados" class="btn btn-danger" aria-label="Apagar todos os dados do aplicativo">
+            🗑️ Apagar Todos os Dados
+          </button>
+          <p class="apagar-aviso">⚠️ Esta ação é irreversível e apagará todo o seu progresso salvo.</p>
+        </div>
+
+      </div><!-- /.container -->
+    </section>
+
+  </main><!-- /#main-content -->
+
+  <!-- ========================================================
+       FOOTER
+  ======================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-logo">✝ Caminho com Deus</p>
+      <p class="footer-purpose">
+        Um aplicativo para nutrir sua vida espiritual com oração, Palavra de Deus e reflexão diária.
+      </p>
+      <p class="footer-offline">
+        📵 Funciona offline após o primeiro acesso — leve sua fé para qualquer lugar.
+      </p>
+      <p class="footer-copy">
+        &copy; <span id="footer-ano"></span> Caminho com Deus.
+        Feito com ❤️ para quem busca a Deus de coração.
+      </p>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="script.js"></script>
+</body>
+</html>
